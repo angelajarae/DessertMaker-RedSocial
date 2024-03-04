@@ -1,0 +1,131 @@
+
+
+
+.contentContainer{
+    padding: 3% 9%;
+    height: 100%;
+}
+.content{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+
+
+.imgContainer{
+    background-color: rgb(252, 143, 119,0.04);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: 1px solid var(--pink);
+    display: flex;
+    justify-content: center;
+    flex:1;
+    padding: 15.5% 3% 0% 3%;
+    flex-direction: column;
+
+}
+.imgContainer img{
+    align-self: center;
+}
+
+
+
+.formContainer{
+    border-right: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    border-top-right-radius: 25px;
+    width: 100%;
+    flex:1.4;
+}
+.backgroundDecoration{
+    background-color: var(--pink);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 7.5%;
+}
+
+
+
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+    padding: 4% 9%;
+}
+form h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    padding: 0% 30%;
+    margin-bottom: 3%;
+}
+form input{
+    padding: 2.5% 2.5% 2.5% 2%;
+    font-size: 1.2em;
+    border: 1px solid var(--gray);
+    margin-bottom: 1%;
+}
+form input::placeholder{
+    color: var(--gray);
+}
+
+form p{
+    font-weight: bold;
+    margin: 2% 0% 1% 0%;
+}
+input[type="date"]::before {
+    content: "Birthday date"; /* New placeholder text */
+    color: var(--gray); /* Placeholder text color */
+}
+.registerButtom{
+    margin-top: 3%;
+    align-self: flex-end;
+    font-size: 1.2em;
+    border: 1px solid var(--light-orange);
+    border-radius: 25px;
+    padding: 1.1% 11%;
+    background-color:transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.registerButtom:hover{
+    background-color: var(--light-orange);
+    color: white;
+}
+.loginButtom{
+    margin-top: 4%;
+    align-self: center;
+    border: none;
+    background-color: transparent;
+    font-size: 1.02em;
+    color:var(--light-orange);
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.loginButtom:hover{
+    transform: scale(1.05);
+}
+.loginButtom:after{
+    position: absolute;
+    height: 1px;
+    left: 0;
+    background-color: var(--light-orange);
+    content: "";
+    bottom: -2px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.footer{
+    position: absolute;
+    background-color: blue;
+    top:95%;
+}
