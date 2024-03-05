@@ -34,7 +34,7 @@ export function RegisterPage(){
             </section>
             
             <div className={styles.footer}>
-                a
+                DessertMaker logo
             </div>
         </>    
     );
