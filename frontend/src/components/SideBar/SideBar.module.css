@@ -1,0 +1,38 @@
+.sideBarContainer{
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 20%;
+    overflow-x: hidden;
+}
+
+
+.sideBar{
+    height: 100%;
+    position: relative;
+    display: flex;
+    right: -78%;
+    transition: 1s;
+    
+}
+.sideBar:hover {
+    right: 0;
+}
+
+
+
+
+
+.buttomsBar{
+    width: 22%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--pink);
+}
+.contentBar{
+    background-color: rgb(252, 143, 119,0.30);
+    width: 78%;
+}
+
+

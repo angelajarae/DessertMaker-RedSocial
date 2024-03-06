@@ -1,5 +1,11 @@
 import axios from "axios";
 
-export const getAllUserProfiles=()=>{
-    return axios.get('http://127.0.0.1:8000/users/api/user-profiles/');
-}
+const userProfilesApi=axios.create({
+    baseURL:"http://localhost:8000/users/api/user-profiles/"
+
+});
+
+
+export const getAllUserProfiles=()=>userProfilesApi.get("/");
+export const createUserProfile=(userProfile)=>userProfilesApi.post("/",userProfile);
+export const getUserProfile = (userProfileId) => userProfilesApi.get(`/${userProfileId}`);

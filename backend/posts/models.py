@@ -24,6 +24,21 @@ class Post(models.Model):
     @property
     def saves_count(self):
         return self.save_set.count()
+    
+    @property
+    def reposts_count(self):
+        return RecipeRepost.objects.filter(recipe_post__post_id=self.pk).count()
+    
+    @property
+    def post_type(self):
+        if RecipePost.objects.filter(post=self).exists():
+            return 'RecipePost'
+        elif RecipeRepost.objects.filter(post=self).exists():
+            return 'RecipeRepost'
+        elif RecipeComment.objects.filter(post=self).exists():
+            return 'RecipeComment'
+        else:
+            return None
 
     def __str__(self) :
         return f"{self.user.username} {self.pk}"

@@ -70,15 +70,20 @@ table {
 	--neutral:#FFD6BF;
 	--orange:#FCA677;
 	--light-orange:#FCBD77;
-	--gray:#DCDBDB;
+	--gray:rgb(220, 219, 219);
 }
 
 
+
+html,body, #root{
+	height: 100%;
+}
 
 *{
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	box-sizing: border-box;
 }
 h1{
 	font-family: "Josefin Sans", sans-serif;

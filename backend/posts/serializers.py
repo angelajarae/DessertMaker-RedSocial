@@ -5,9 +5,11 @@ class PostSerializer(serializers.ModelSerializer):
     class Meta:
         likes_count = serializers.IntegerField(source='likes_count', read_only=True)
         saves_count = serializers.IntegerField(source='saves_count', read_only=True)
+        reposts_count=serializers.IntegerField(source='reposts_count',read_only=True)
+        post_type=serializers.CharField(source='post_type',read_only=True)
 
         model=models.Post
-        fields=["id","user","likes_count","saves_count"]
+        fields=["id","user","likes_count","saves_count","reposts_count","post_type"]
 
 class RecipePostSerializer(serializers.ModelSerializer):
     class Meta:

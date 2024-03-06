@@ -43,7 +43,7 @@ export function LoginPage(){
 
     function handleCreateAccount(){
         navigate('/register');
-    }
+    };
 
 
 

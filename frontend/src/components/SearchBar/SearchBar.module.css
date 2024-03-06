@@ -1,0 +1,13 @@
+.searchBarContainer{
+    padding: 2%;
+    position: absolute;
+    width: 117%;
+}
+
+input{
+    width: 100%;
+    border:none;
+    background-color: rgb(220, 219, 219,0.12);
+    padding: 1%;
+   
+}

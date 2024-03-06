@@ -1,0 +1,30 @@
+.recipePostsContainer{
+    padding-left: 15%;
+    position: relative;
+}
+.username{
+    margin-bottom: 0.1%;
+}
+.header{
+    padding-top: 1.2%;
+    background-color: var(--yellow);
+    
+}
+.decoration{
+    position: absolute;
+    top:10px;
+    right: -6px;
+}
+
+.recipePost{
+    background-color: rgb(255, 208, 117,0.09);
+    padding: 4.5% 4%;
+}
+.recipePost h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-bottom: 1%;
+}
+.recipeImage{
+    width: 100%;
+}
